@@ -1,0 +1,114 @@
+%Latex by PNNK
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[left=1.5cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{nameref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[shortlabels]{enumitem}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+
+\begin{document}
+	\textbf{Bài 5 (Tuần 3): }Cho đường tròn $(O)$ và dây cung $BC$ cố định, $A$ thay đổi trên đường tròn $(O).\enspace{H}$ là trực tâm của tam giác $ABC.\enspace{AH,BH,CH}$ cắt $AB,BC,CA$ theo thứ tự tại $D,E,F.\enspace{AH}$ cắt $EF$ tại $P.\enspace{AO}$ cắt $BC$ tại $Q.\enspace{M}$ là trung điểm $PQ$.
+\begin{enumerate}[a)]
+	\item Chứng minh: $AM$ luôn đi qua một điểm cố định gọi là $L$.
+	\item $DO$ cắt $HL$ tại $R$. Đường thẳng qua $D$ song song $QR$ cắt $HL$ tại $S$. Chứng minh $S$ di chuyển trên một đường cố định.\\
+\end{enumerate}
+
+\underline{\textbf{Solution.}}\\
+
+
+\definecolor{ccqqqq}{rgb}{0.8,0,0}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+	\clip(-10.359170089651164,-6.0513711185251715) rectangle (12.404561164834623,7.330753457681833);
+	\draw (-0.679485607213031,0.9613014319607968) circle (5.378618334265159cm);
+	\draw (-2.9086966498252025,5.856212392661642)-- (-4.931016392854415,-2.3332427192742218);
+	\draw (-4.931016392854415,-2.3332427192742218)-- (3.6833481417939935,-2.1843649305478894);
+	\draw (3.6833481417939935,-2.1843649305478894)-- (-2.9086966498252025,5.856212392661642);
+	\draw (-4.401250870090141,-0.18793855385541822)-- (0.29364919199882333,1.9501847228284135);
+	\draw (-2.8167100243251855,0.5336835510630185)-- (0.7759779560725023,-2.2346115671416986);
+	\draw (-2.9086966498252025,5.856212392661642)-- (-0.6238341255302109,-2.2588038249110554);
+	\draw (0.29364919199882333,1.9501847228284135)-- (-4.931016392854415,-2.3332427192742218);
+	\draw (-4.401250870090141,-0.18793855385541822)-- (3.6833481417939935,-2.1843649305478894);
+	\draw (-2.7678084774862297,-2.2958570700252303)-- (-2.9086966498252025,5.856212392661642);
+	\draw (-0.679485607213031,0.9613014319607968)-- (-2.7678084774862297,-2.2958570700252303);
+	\draw (-2.797393686459562,-0.5839981210820623)-- (-0.6238341255302109,-2.2588038249110554);
+	\draw [color=ccqqqq] (-2.042962544998548,-1.1653144105353304)-- (0.7759779560725023,-2.2346115671416986);
+	\draw [color=ccqqqq] (-2.7678084774862297,-2.2958570700252303)-- (1.5497254353991403,-3.9336095287400483);
+	\draw (-0.6238341255302109,-2.2588038249110554)-- (1.5497254353991403,-3.9336095287400483);
+	\draw [dash pattern=on 2pt off 2pt] (0.7759779560725023,-2.2346115671416986)-- (1.5497254353991403,-3.9336095287400483);
+	\draw (0.7759779560725023,-2.2346115671416986)-- (-2.9086966498252025,5.856212392661642);
+	\begin{scriptsize}
+		\draw [fill=uuuuuu] (-0.679485607213031,0.9613014319607968) circle (2.2pt);
+		\draw[color=uuuuuu] (-0.31278441401781496,1.0052494032277274) node {\normalsize$O$};
+		\draw [fill=uuuuuu] (-4.931016392854415,-2.3332427192742218) circle (2.2pt);
+		\draw[color=uuuuuu] (-5.4330421682807035,-2.3489310247562925) node {\normalsize$B$};
+		\draw [fill=uuuuuu] (-2.9086966498252025,5.856212392661642) circle (2.2pt);
+		\draw[color=uuuuuu] (-3.1111729569341176,6.3423902123113285) node {\normalsize$A$};
+		\draw [fill=uuuuuu] (3.6833481417939935,-2.1843649305478894) circle (2.2pt);
+		\draw[color=uuuuuu] (4.152512481265,-2.0037883041507194) node {\normalsize$C$};
+		\draw [fill=uuuuuu] (-0.6238341255302109,-2.2588038249110554) circle (1.7pt);
+		\draw[color=uuuuuu] (-0.7422388291413171,-2.555995941202507) node {\normalsize$L$};
+		\draw [fill=uuuuuu] (1.5497254353991403,-3.9336095287400483) circle (1.7pt);
+		\draw[color=uuuuuu] (1.5972408835279816,-4.455839377122803) node {\normalsize$S\equiv{T}$};
+		\draw [fill=uuuuuu] (-2.7678084774862297,-2.2958570700252303) circle (1.7pt);
+		\draw[color=uuuuuu] (-2.797406847292687,-2.6371906905411508) node {\normalsize$D$};
+		\draw [fill=uuuuuu] (0.29364919199882333,1.9501847228284135) circle (1.7pt);
+		\draw[color=uuuuuu] (0.45007238749611905,2.341872314383091) node {\normalsize$E$};
+		\draw [fill=uuuuuu] (-4.401250870090141,-0.18793855385541822) circle (1.7pt);
+		\draw[color=uuuuuu] (-4.789821643515771,0.28670429623172244) node {\normalsize$F$};
+		\draw [fill=uuuuuu] (-2.8167100243251855,0.5336835510630185) circle (1.7pt);
+		\draw[color=uuuuuu] (-3.1582378733803322,0.7397429593711554) node {\normalsize$P$};
+		\draw [fill=uuuuuu] (0.7759779560725023,-2.2346115671416986) circle (1.7pt);
+		\draw[color=uuuuuu] (1.2089812177431233,-2.5332427192742213) node {\normalsize$Q$};
+		\draw [fill=uuuuuu] (-1.0203660341263416,-0.8504640080393401) circle (1.7pt);
+		\draw[color=uuuuuu] (-0.7563686620337463,-0.5820226723897819) node {\normalsize$M$};
+		\draw [fill=uuuuuu] (-2.797393686459562,-0.5839981210820623) circle (1.7pt);
+		\draw[color=uuuuuu] (-3.1582378733803322,-0.08981503533799401) node {\normalsize$H$};
+		\draw [fill=uuuuuu] (-2.042962544998548,-1.1653144105353304) circle (1.7pt);
+		\draw[color=uuuuuu] (-2.4836407376512564,-1.193866586190571) node {\normalsize$R$};
+	\end{scriptsize}
+	\end{tikzpicture}
+
+\begin{enumerate}[a)]
+\item Kẻ đường kính $AT$ của $(O)$. Khi đó ta có $\triangle{AFH}\sim\triangle{ACT}\Rightarrow\dfrac{AH}{AT}=\dfrac{AF}{AC}$\qquad(1)\\
+
+Ta có $\widehat{AFP}=\widehat{ACQ}\Rightarrow\triangle{APF}\sim\triangle{AQC}\Rightarrow\dfrac{AP}{AQ}=\dfrac{AF}{AC}$\qquad(2)
+	
+Từ (1) và (2) $\Rightarrow\dfrac{AH}{AT}=\dfrac{AP}{AQ}\Rightarrow\dfrac{AP}{AH}=\dfrac{AQ}{AT}\Rightarrow{PQ}\parallel{HT}$. Suy ra $PQTH$ là hình thang.\\
+
+Gọi $L$ là trung điểm $HT$. Theo bổ đề hình thang, ta có $A,M,L$ thẳng hàng. Mà $BHCT$ là hình bình hành do đó $L$ là trung điểm của $BC$ (không đổi).\\
+
+
+\item Ta nhận thấy rằng nếu chứng minh điểm $S$ trùng điểm $T$ thì bài toán được giải quyết, vậy cần chỉ ra $RQ\parallel{DT}$.\\
+
+Có $AD\perp{BC}$. $L$ là trung điểm $BC$ nên $OL\perp{BC}\Rightarrow{OL}\parallel{BC}$\\
+
+Từ đó, có: $\dfrac{OQ}{OT}=\dfrac{OQ}{OA}=\dfrac{LQ}{LD}$\\
+
+Áp dụng định lý Menelaus cho tam giác $ODQ$ với bộ 3 điểm $R,L,T$ thẳng hàng nằm trên các cạnh của tam giác:
+\begin{center}
+	$\dfrac{LQ}{LD}\cdot\dfrac{RD}{RO}\cdot\dfrac{TO}{TQ}=1$
+\end{center}
+$\Rightarrow\dfrac{OQ}{TO}\cdot\dfrac{RD}{RO}\cdot\dfrac{TO}{TQ}=1\Rightarrow\dfrac{QO}{QT}\cdot\dfrac{RD}{RO}=1\Rightarrow\dfrac{RO}{RD}=\dfrac{QO}{QT}$\\
+
+Theo định lý Thales ta có $RQ\parallel{DT}$ Do đó $T\equiv{S}$. Vậy điểm $S$ di chuyển trên đường tròn $(O)$ cố định.
+
+
+\end{enumerate}
+
+\end{document}
